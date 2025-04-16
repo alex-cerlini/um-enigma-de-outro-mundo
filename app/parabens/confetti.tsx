@@ -70,12 +70,10 @@ export default function Confetti() {
       }
     }
 
-    // Criar partículas
     for (let i = 0; i < particleCount; i++) {
       particles.push(new Particle());
     }
 
-    // Função de animação
     function animate() {
       if (!ctx || !canvas) return;
 
@@ -89,10 +87,8 @@ export default function Confetti() {
       requestAnimationFrame(animate);
     }
 
-    // Iniciar animação
     animate();
 
-    // Ajustar tamanho do canvas quando a janela for redimensionada
     const handleResize = () => {
       if (!canvas) return;
       canvas.width = window.innerWidth;
