@@ -30,10 +30,10 @@ export default function Home() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-4 bg-gradient-to-b from-pink-100 to-purple-100">
+    <main className="flex min-h-screen flex-col items-center justify-center p-4 bg-gradient-to-b from-[#c5e2ee] to-[#e8f4f9]">
       <Card className="w-full max-w-md shadow-lg">
         <CardHeader className="text-center">
-          <CardTitle className="text-2xl font-bold text-pink-600">Área Restrita</CardTitle>
+          <CardTitle className="text-2xl font-bold text-[#4a9cc0]">Área Restrita</CardTitle>
           <CardDescription>Digite a senha para acessar a surpresa especial</CardDescription>
         </CardHeader>
         <form onSubmit={handleSubmit}>
@@ -50,12 +50,12 @@ export default function Home() {
                 placeholder="Digite a senha secreta..."
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="border-pink-300 focus:border-pink-500"
+                className="border-[#84c2db] focus:border-[#4a9cc0]"
               />
             </div>
           </CardContent>
           <CardFooter>
-            <Button type="submit" className="w-full bg-pink-500 hover:bg-pink-600">
+            <Button type="submit" className="w-full bg-[#84c2db] hover:bg-[#4a9cc0]">
               Entrar
             </Button>
           </CardFooter>
